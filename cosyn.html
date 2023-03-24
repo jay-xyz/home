@@ -5,40 +5,95 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="jayarchive" />
-    <link rel="canonical" href="http://www.jayarchive.com" />
-    <link rel="icon" type="image/png" href="images/icon.png" />
-    <link rel="icon" type="image/x-icon" href="images/icon.ico" />
+    <meta name="description" content="J - A is an online portfolio displaying works by Jay Patel" />
+    <link rel="canonical" href="http://www.jayarchive.com/web-mobile.html" />
     <meta name="keywords" content="Graphic Design" />
     <meta name="author" content="Jay Archive" />
-    <title>jay-xyz | Online Portfolio</title>
+    <title>Cosyn</title>
     <link rel="stylesheet" href="style.css">
   </head>
 
   <body>
+  
+  <div id = "boxes"> 
+              
+            <div id = "leftbox"> 
+      			<a href="selectedprojects.html"><p>Selected Projects</p></a>
+      			<a href="cover-art.html"><p>Playground</p></a>
+            </div>  
+              
+            <div id = "middlebox"> 
+      			<a href='mailto:jayarchiveone@gmail.com'><p>Contact</p></a>
+      			<p id="MyClockDisplay" class="clock" onload="showTime()"></p>
+            </div>
+        </div> 
+        
 
+    <script>
+      function showTime() {
+        var date = new Date();
+        var h = date.getHours(); // 0 - 23
+        var m = date.getMinutes(); // 0 - 59
+        var s = date.getSeconds(); // 0 - 59
+        var session = "AM";
+
+        if (h == 0) {
+          h = 12;
+        }
+
+        if (h > 12) {
+          h = h - 12;
+          session = "PM";
+        }
+
+        h = (h < 10) ? "0" + h : h;
+        m = (m < 10) ? "0" + m : m;
+        s = (s < 10) ? "0" + s : s;
+
+        var time = h + ":" + m + ":" + s + " " + session;
+        document.getElementById("MyClockDisplay").innerText = time;
+        document.getElementById("MyClockDisplay").textContent = time;
+
+        setTimeout(showTime, 1000);
+
+      }
+
+      showTime();
+
+    </script>
+    
+    <br>
+    <div class="logo">
+		<a href='index.html'><img src="images/klein.svg"/></a>
+	</div>
+	
+	<br>
+	<br>
+	
+	<div class="row1">
+  <div class="column1">
+    <img src="images/cosyn.svg"/>
+  </div>
+</div>
+	
+	<div id = "web-opt"> 
+              
+            <div id = "leftbox"> 
+                <a href="cover.html"><p style="color: #002199;">Gallery V</p></a>
+      			<p style="color: #002199;">Mobile App Concept Design</p>
+            </div>  
+              
+            <div id = "middlebox"> 
+                <a href="littlehands.html"><p style="color: #999999;">Next</p></a>
+      			<a href="galleryv.html"><p style="color: #999999;">Previous</p></a>
+            </div> 
+        </div> 
+    
     <div id="desc">
-      <a href="index.html"><h3>Jay Patel is a Graphic & Product Designer, based in the UK.</h3></a>
-    </div>
-
-    <div id="navbar">
-      <ul>
-        <li><a href="website-mobile.html">Website & Mobile</a></li>
-        <li><a href="print.html">Print</a></li>
-        <li><a href="coverart.html">Cover Art</a></li>
-        <li><a href='mailto:jayarchiveone@gmail.com'>Contact</a></li>
-      </ul>
-    </div>
-    
-    <div id="paragraph">
-    
-     <h4>Cosyn in a social news aggregation app, which allows it's registered users to share multimedia content. Cosyn's aim is to emphasize
-     content organisation, therefore it allows it's users to create Lists and store content within and other
-     users can then vote on the usefulness of a list.
-     <br>
-     <br>  
-     I was the lead designer for this project, tasked to develop a visual identity for the company as well as handling the product design. </h4>
-    </div>
+  	<p>Cosyn is a social new aggregation app, which let's it users share various types of multimedia content, varying from
+  	text posts, to image and video. Cosyn's objective is to emphasis contents organisation which individual users can tailor
+  	to their needs. I worked on creating the brand identity and product design with the Cosyn team.</p>
+  	</div> 
 
 
 <div class="single">
