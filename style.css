@@ -145,6 +145,10 @@ h2 {font-size: 1.5em; font-weight: 400; line-height: 1.2;}
   #leftbox {font-size: 0.8em;}
   #middlebox {font-size: 0.8em;}
   #rightbox {font-size: 0.8em;}
+	
+  #title {
+	width: 70%;
+	padding: 20px 0px 20px 20px;}
   
   .column {
     width: 100%;
