@@ -1,204 +1,162 @@
-@font-face {
-  font-family: "San Francisco";
-  font-weight: 400;
-  src: url("https://applesocial.s3.amazonaws.com/assets/styles/fonts/sanfrancisco/sanfranciscodisplay-regular-webfont.woff");
-}
-
-
-
 body {
-	font-family: "San Francisco";
-	font-style: normal;
-	background-color: white;
-	font-weight: 500;
-	padding: 10px;
-	text-rendering: optimizeLegibility;
+  font-family: SF Pro Display,SF Pro Icons,Helvetica Neue,Helvetica,Arial,Bookish,sans-serif;
+  font-style: normal;
+  color: #000;
+  padding: 10px;
+  text-rendering: optimizeLegibility;
+  /* cursor: url('images/cursor.png'), auto; */
+  /* font-family: VCROSDMono, Helvetica, sans-serif; */
 }
 
 * {
-	box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 a:link {
-	color: #000;
-	text-decoration: none;
+  color: #000;
+  text-decoration: none;
 }
 
 a:visited {
-	color: #000;
-	text-decoration: none;
+  color: #ddd;
+  text-decoration: none;
 }
 
 a:hover {
-	color: #6FF2C4;
-	text-decoration: none;
+  color: #002199;
+  text-decoration: none;
+  /* cursor: url('images/cursor-hover.png'), default; */
 }
 
 a:active {
-	color: #6FF2C4;
-	text-decoration: none;
+  color: #ddd;
+  text-decoration: none;
 }
 
-span {
-	color: #000;
-	font-weight: 200px
-}
+h2 {font-size: 1.5em; font-weight: 400; line-height: 1.2;}
 
-h1 {
-	font-size: 10em;
-	color: #000;
-}
 
-h2 {
-	font-size: 1em;
-	font-family: serif;
-	font-style: italic;
-	color: #000;
-}
+#title {
+	width: 50%;
+	padding: 20px 0px 20px 20px;
 
-h3 {
-	font-size: 2em;
-	font-weight: 500;
-	padding: 10px;
-	background: -webkit-linear-gradient(#ff7100, #f81896);
-  	-webkit-background-clip: text;
-  	-webkit-text-fill-color: transparent;
 }
-
-h4 {
-	font-size: 1.25em;
-	font-weight: 300;
-	color: #000;
-	padding: 10px;
-}
-
-#banner{
-    max-width: 100%;
-    height: auto;
-    padding: 10px;
-    left: 0px;
-    right: 0px;
-}
-
-#myImage{
-    width: 100%;
-    height: auto;
-    left: 0px;
-    right: 0px;
-}
-
 
 #desc {
-	padding: 10px;
+	width: 70%;
+	margin-top: 2%;
+	padding: 50px 0px 20px 20px;;
+	line-height: 1.5;
 
 }
 
-#paragraph {
-	padding: 10px;
-
+#leftbox {
+  float: left;
+  width: 30%;
+  font-size: 0.8em;
+  padding: 0px 0px 20px 20px;
+  display: block;
 }
 
-#navbar ul { 
-	margin: 0; 
-	padding: 10px 0px 0px 0px;
-	font-size: 1.5em;
-	font-weight: 300; 
-	list-style-type: none; 
-	text-align: left; 
-	} 
- 
-#navbar ul li {  
-	display: inline; 
-	} 
- 
-#navbar ul li a { 
-	text-decoration: none; 
-	padding: .2em 1em; 
-	color: #000; 
-	} 
+#middlebox {
+  float: left;
+  width: 40%;
+  font-size: 0.8em;
+  padding: 0px 0px 20px 20px;
+  display: block;
+}
+
+#rightbox {
+  float: left;
+  width: 30%;
+  font-size: 0.8em;
+  padding: 0px 0px 20px 20px;
+  display: block;
+}
+
+.logo {
+  position: relative;
+  top: 45px;
+  width: auto;
+  height: auto;
+  padding: 20px;
+  margin-bottom: 50px;
+}
+
+/* Three image containers (use 25% for four, and 50% for two, etc) */
+.column1 {
+  float: left;
+  width: 25%;
+  padding: 0px 0px 10px 20px;
+}
+
+/* Clear floats after image containers */
+.row1::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.row1 {
+  display: flex;
+}
+
+.column1 {
+  flex: 25%;
+  padding: 0px 0px 20px 20px;
+}
+
 
 /* Create three equal columns that floats next to each other */
 
 .column {
-	float: left;
-	width: 33.33%;
-	padding: 20px;
+  float: left;
+  width: 33.33%;
+  padding: 20px;
 }
 
 /* Clear floats after the columns */
 .row:after {
-	content: "";
-	display: table;
-	clear: both;
+  content: "";
+  display: table;
+  clear: both;
 }
 
 .single {
-	float: left;
-	width: 100%;
-	padding: 20px 20px 0px 20px;
-	font-size: 0.8em;
+  float: left;
+  text-align: center;
+  width: 100%;
+  padding: 20px 20px 0px 20px;
+  font-size: 0.8em;
 }
 
-.center {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 50%;
+#sets {
+  float: left;
+  text-align: center;
+  width: 100%;
+  padding: 30px 30px 30px 30px;
+  font-size: 0.8em;
 }
-
 
 
 /* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
 @media screen and (max-width: 600px) {
+  
+  #leftbox {font-size: 0.8em;}
+  #middlebox {font-size: 0.8em;}
+  #rightbox {font-size: 0.8em;}
+  
+  .column {
+    width: 100%;
+    top: 100px;
+  }
 
-h1 {
-	font-size: 7em;
-}
-
-#desc {
-	width: 80%;
-	padding: 10px;
-
-}
-
-#navbar ul { 
-	margin: 0; 
-	padding: 10px 0px 0px 0px;
-	font-size: 2em;
-	font-weight: 300; 
-	list-style-type: none; 
-	text-align: left; 
-	width: 100%;
-	} 
- 
-#navbar ul li {  
-	display: inline; 
-	} 
- 
-#navbar ul li a { 
-	text-decoration: none; 
-	padding: .2em 0.5em; 
-	color: #000; 
-	} 
-
-.column {
-	width: 100%;
-	top: 100px;
-}
-
-.single {
-	float: left;
+  .single {
+    float: left;
     width: 100%;
     font-size: 0.8em;
     padding: 20px;
-}
-
-.archive {
-	float: left;
-    width: 100%;
-    padding: 20px;
-}
+  }
 
 }
-
 
