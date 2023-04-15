@@ -83,6 +83,8 @@ h2 {font-size: 1.5em; font-weight: 400; line-height: 1.2;}
   margin-bottom: 50px;
 }
 
+.tag {font-size: 0.8em; padding: 0px 0px 20px 0px;}
+
 /* Three image containers (use 25% for four, and 50% for two, etc) */
 .column1 {
   float: left;
@@ -113,6 +115,12 @@ h2 {font-size: 1.5em; font-weight: 400; line-height: 1.2;}
   float: left;
   width: 33.33%;
   padding: 20px;
+}
+
+.column2 {
+  float: left;
+  width: 50%;
+  padding: 15px;
 }
 
 /* Clear floats after the columns */
@@ -151,6 +159,11 @@ h2 {font-size: 1.5em; font-weight: 400; line-height: 1.2;}
 	padding: 20px 0px 20px 20px;}
   
   .column {
+    width: 100%;
+    top: 100px;
+  }
+  
+  .column2 {
     width: 100%;
     top: 100px;
   }
