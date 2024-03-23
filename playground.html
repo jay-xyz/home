@@ -1,174 +1,40 @@
 <!DOCTYPE html>
-<html>
-
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="J - A is an online portfolio displaying works by Jay Patel" />
-    <link rel="canonical" href="http://www.jayarchive.com/web-mobile.html" />
-    <meta name="keywords" content="Graphic Design" />
-    <meta name="author" content="Jay Archive" />
-    <title>Playground</title>
-    <link rel="stylesheet" href="style.css">
-  </head>
-
-  <body>
-  
-  <div id = "boxes"> 
-              
-            <div id = "leftbox"> 
-      			<a href="selectedprojects.html"><p>Selected Projects</p></a>
-      			<a href="playground.html"><p>Playground</p></a>
-            </div>  
-              
-            <div id = "middlebox"> 
-      			<a href='mailto:jayarchiveone@gmail.com'><p>Contact</p></a>
-      			<p id="MyClockDisplay" class="clock" onload="showTime()"></p>
-            </div>
-        </div> 
-        
-
-    <script>
-      function showTime() {
-        var date = new Date();
-        var h = date.getHours(); // 0 - 23
-        var m = date.getMinutes(); // 0 - 59
-        var s = date.getSeconds(); // 0 - 59
-        var session = "AM";
-
-        if (h == 0) {
-          h = 12;
-        }
-
-        if (h > 12) {
-          h = h - 12;
-          session = "PM";
-        }
-
-        h = (h < 10) ? "0" + h : h;
-        m = (m < 10) ? "0" + m : m;
-        s = (s < 10) ? "0" + s : s;
-
-        var time = h + ":" + m + ":" + s + " " + session;
-        document.getElementById("MyClockDisplay").innerText = time;
-        document.getElementById("MyClockDisplay").textContent = time;
-
-        setTimeout(showTime, 1000);
-
-      }
-
-      showTime();
-
-    </script>
-    
-    <br>
-    <div class="logo">
-		<a href='index.html'><img src="images/klein.svg"/></a>
-	</div>
-	
-	<br>
-	<br>
-    <div class="row">
-
-	<div class="column">
-        <img src="images/artwork/buffalo66.png" alt="Buffalo '66 Poster" style="width:100%">
-      </div>
-	    
-	<div class="column">
-        <img src="images/artwork/priscilla.png" alt="Priscilla Poster" style="width:100%">
-      </div>
-	    
-	    <div class="column">
-        <img src="images/artwork/niagara.png" alt="Niagara Poster" style="width:100%">
-      </div>
-	    
-	<div class="column">
-        <img src="images/artwork/oz.jpg" alt="The Wizard of Oz Poster" style="width:100%">
-      </div>
-	    
-	    <div class="column">
-        <img src="images/artwork/blonde.jpg" alt="Blonde Movie Poster" style="width:100%">
-      </div>
-	    
-	    <div class="column">
-        <img src="images/artwork/fallen-angels.jpg" alt="Fallen Angels Poster" style="width:100%">
-      </div>
-      
-      <div class="column">
-        <img src="images/artwork/tohaveandhavenot.png" alt="To Have And Have Not Poster" style="width:100%">
-      </div>
-      
-      <div class="column">
-        <img src="images/artwork/casablanca.png" alt="Casablanca Poster" style="width:100%">
-      </div>
-      
-      <div class="column">
-        <img src="images/artwork/Bride-Of-Frankenstein.png" alt="The Bride Of Frankenstein Poster" style="width:100%">
-      </div>
-      
-      <div class="column">
-        <img src="images/artwork/Dial-M-For-Murder.png" alt="Dial M For Murder Poster" style="width:100%">
-      </div>
-      
-      <div class="column">
-        <img src="images/artwork/thebatman.png" alt="The Batman Poster" style="width:100%">
-      </div>
-      
-      <div class="column">
-        <img src="images/artwork/thegodfather.png" alt="The Godfather Poster" style="width:100%">
-      </div>
-      
-      <div class="column">
-        <img src="images/artwork/thisgunforhire.png" alt="This Gun For Hire Poster" style="width:100%">
-      </div>
-      
-      <div class="column">
-        <img src="images/artwork/august.png" alt="August In The Water Poster" style="width:100%">
-      </div>
-      
-      <div class="column">
-        <img src="images/artwork/soho.png" alt="Last Night In Soho Poster" style="width:100%">
-      </div>
-      
-      <div class="column">
-        <img src="images/artwork/dune.jpg" alt="Dune Poster" style="width:100%">
-      </div>
-      
-      <div class="column">
-        <img src="images/artwork/rashomon.jpg" alt="Rashomon Poster" style="width:100%">
-      </div>
-	    
-      <div class="column">
-        <img src="images/artwork/Candyman.jpg" alt="Candyman 2021 Poster" style="width:100%">
-      </div>
-
-      <div class="column">
-        <img src="images/artwork/dragon.jpg" alt="Crouching Tiger Hidden Dragon Poster" style="width:100%">
-      </div>
-
-      <div class="column">
-        <img src="images/artwork/inthemood.jpg" alt="In The Mood For Love Poster" style="width:100%">
-      </div>
-
-      <div class="column">
-        <img src="images/artwork/suspiria.jpg" alt="Suspria 2018 Poster" style="width:100%">
-      </div>
-
-      <div class="column">
-        <img src="images/artwork/thewitch.jpg" alt="The Witch Poster" style="width:100%">
-	    </div>
-
-      <div class="column">
-        <img src="images/artwork/portishead.jpg" alt="Portishead Roseland NYC Poster" style="width:100%">
-      </div>
-
-      <div class="column">
-        <img src="images/artwork/redlantern.jpg" alt="Raise The Red Lantern Poster" style="width:100%">
-      </div>
-    </div>
-
-  </body>
-
+<html lang="en">
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <title>Jay Patel</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&amp;display=swap" rel="stylesheet">
+  <script src="script.js"></script>
+</head>
+<body>
+  <div class="header">
+    <h2>© Jay Patel 2024</h2>
+    <h2>LinkedIn</h2>
+    <h2>Contact</h2>
+  </div>
+  <div class="links">
+    <a href="index.html">
+    <h1 style="opacity:15%">Select Projects</h1></a> <a href="playground.html">
+    <h1>Playground</h1></a>
+  </div>
+  <hr>
+  <div class="container">
+    <div class="column"><img src="images/playground/buffalo66.png" alt="Buffalo 66 Poster"></div>
+    <div class="column"><img src="images/playground/priscilla.png" alt="Priscilla 66 Poster"></div>
+    <div class="column"><img src="images/playground/niagara.png" alt="Niagara Poster"></div>
+  </div>
+  <div class="container">
+    <div class="column"><img src="images/playground/oz.jpg" alt="The Wizard Of Oz Poster"></div>
+    <div class="column"><img src="images/playground/blonde.jpg" alt="Blonde Poster"></div>
+    <div class="column"><img src="images/playground/fallenangels.jpg" alt="Fallen Angels Poster"></div>
+  </div>
+  <div class="container">
+    <div class="column"><img src="images/playground/tohaveandhavenot.png" alt="To Have And Have Not Poster"></div>
+    <div class="column"><img src="images/playground/casablanca.png" alt="Casablanca Poster"></div>
+    <div class="column"><img src="images/playground/soho.png" alt="Fallen Angels Poster"></div>
+  </div>
+</body>
 </html>
-
