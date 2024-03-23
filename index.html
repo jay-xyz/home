@@ -1,80 +1,61 @@
 <!DOCTYPE html>
-<html>
-
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="J - A is an online portfolio displaying works by Jay Patel" />
-    <!-- Change for each page --!>
-    <link rel="canonical" href="http://www.jayarchive.com" />
-    <meta name="keywords" content="Graphic Design" />
-    <meta name="author" content="Jay Archive" />
-    <title>J - A</title>
-    <link rel="stylesheet" href="style.css">
-  </head>
-
-  <body>
-        
-    <div id = "boxes"> 
-              
-            <div id = "leftbox"> 
-      			<a href="selectedprojects.html"><p>Selected Projects</p></a>
-      			<a href="playground.html"><p>Playground</p></a>
-            </div>  
-              
-            <div id = "middlebox"> 
-      			<a href='mailto:jayarchiveone@gmail.com'><p>Contact</p></a>
-      			<p id="MyClockDisplay" class="clock" onload="showTime()"></p>
-            </div>
-        </div> 
-
-
-    <script>
-      function showTime() {
-        var date = new Date();
-        var h = date.getHours(); // 0 - 23
-        var m = date.getMinutes(); // 0 - 59
-        var s = date.getSeconds(); // 0 - 59
-        var session = "AM";
-
-        if (h == 0) {
-          h = 12;
-        }
-
-        if (h > 12) {
-          h = h - 12;
-          session = "PM";
-        }
-
-        h = (h < 10) ? "0" + h : h;
-        m = (m < 10) ? "0" + m : m;
-        s = (s < 10) ? "0" + s : s;
-
-        var time = h + ":" + m + ":" + s + " " + session;
-        document.getElementById("MyClockDisplay").innerText = time;
-        document.getElementById("MyClockDisplay").textContent = time;
-
-        setTimeout(showTime, 1000);
-
-      }
-
-      showTime();
-
-    </script>
-    
-    <br>
-    <div class="logo">
-		<a href='index.html'><img src="images/klein.svg"/></a>
-	</div>
-	
-	<div id="title">
-    	<h2>Jay Patel is a UK based Product Designer, with a background in Digital Design and Art Direction</h2>
-    </div>
-
-
-
+<html lang="en">
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <title>Jay Patel</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&amp;display=swap" rel="stylesheet">
+  <script src="script.js"></script>
+</head>
+<body>
+  <div class="header">
+    <h2>© Jay Patel 2024</h2>
+    <h2>LinkedIn</h2>
+    <h2>Contact</h2>
+  </div>
+  <div class="links">
+    <a href="index.html">
+    <h1>Select Projects</h1></a> <a href="playground.html">
+    <h1 style="opacity:15%">Playground</h1></a>
+  </div>
+  <hr>
+  <div class="info">
+    <h2>Cine Asia</h2>
+    <h2>Concept Product Design</h2>
+  </div><img src="images/select/cineasia1.png" alt="CineAsia App Mockups"> <img src="images/select/cineasia2.png" alt="CineAsia App Mockups">
+  <hr>
+  <div class="info">
+    <h2>Client: Little Hands</h2>
+    <h2>Branding & Product Design</h2>
+  </div><img src="images/select/littlehands1.png" alt="Little Hands App"> <img src="images/select/littlehands2.png" alt="Little Hands App">
+  <hr>
+  <div class="info">
+    <h2>Client: Regen</h2>
+    <h2>Branding & Product Design</h2>
+  </div><br>
+  <img src="images/select/regen1.png"><br>
+  <br>
+  <br>
+  <img src="images/select/regen2.png"><br>
+  <br>
+  <br>
+  <img src="images/select/regen5.png"><br>
+  <br>
+  <br>
+  <img src="images/select/regen4.png">
+  <hr>
+  <div class="info">
+    <h2>Client: Bodi</h2>
+    <h2>Branding & Website Design</h2>
+  </div><br>
+  <img src="images/select/bodi1.png"><br>
+  <br>
+  <br>
+  <img src="images/select/bodi2.png"> <img src="images/select/bodi3.png"><br>
+  <br>
+  <br>
+  <img src="images/select/bodi4.png">
 </body>
-
 </html>
-
