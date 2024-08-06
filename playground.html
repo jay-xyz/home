@@ -1,42 +1,119 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta http-equiv="content-type" content="text/html; charset=utf-8">
-  <title>Jay Patel</title>
-  <link rel="stylesheet" href="style.css">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
-  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&amp;display=swap" rel="stylesheet">
-  <script src="script.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jay Patel</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <div class="header">
-    <h2>© Jay Patel 2024</h2>
-     <a href="https://www.linkedin.com/in/jaypatel94"><h2>LinkedIn</h2></a>
-    <a href='mailto:j-patel94@live.com'><h2>Contact</h2></a>
-  </div>
-  <div class="links">
-    <a href="index.html">
-    <h1 style="opacity:15%">Select Projects</h1></a> <a href="playground.html">
-    <h1>Playground</h1></a>
-  </div>
-  <hr>
-  <div class="container">
-    <div class="column"><img src="images/playground/challengers.png" alt="Challengers Poster"></div>
-    <div class="column"><img src="images/playground/sullivanstravels.png" alt="Sullivans Travels Poster"></div>
-    <div class="column"><img src="images/playground/buffalo66.png" alt="Buffalo 66 Poster"></div>
-  </div>
-  <div class="container">
-    <div class="column"><img src="images/playground/priscilla.png" alt="Priscilla Poster"></div>
-    <div class="column"><img src="images/playground/niagara.png" alt="Niagara Poster"></div>
-    <div class="column"><img src="images/playground/oz.jpg" alt="The Wizard Of Oz Poster"></div>
-    <div class="column"><img src="images/playground/blonde.jpg" alt="Blonde Poster"></div>
-  </div>
-  <div class="container">
-    <div class="column"><img src="images/playground/fallenangels.jpg" alt="Fallen Angels Poster"></div>
-    <div class="column"><img src="images/playground/tohaveandhavenot.png" alt="To Have And Have Not Poster"></div>
-    <div class="column"><img src="images/playground/casablanca.png" alt="Casablanca Poster"></div>
-    <div class="column"><img src="images/playground/soho.png" alt="Fallen Angels Poster"></div>
-  </div>
+    <header>
+        <div class="header-container">
+            <!-- Header content -->
+            <div class="header-text">
+                <span id="day-greeting"></span>
+                <div class="bottom-line">
+    <span id="clock"></span>
+    <span id="weather">
+        <span id="weather-text"></span>
+        <span id="weather-icon"></span>
+    </span>
+</div>
+            </div>
+        </div>
+    </header>
+
+    <main role="main">
+        <!-- Hero section -->
+        <section class="hero-container">
+            <div class="section-welcome">
+                <h1>Jay Patel</h1>
+                <h1><span class="designer">Graphic Design + Product Design</span></h1>
+            </div>
+            <div class="section-nav">
+                <h1><a href="index.html">Select Projects →</a></h1>
+                <h1>Playground</h1>
+                <h1><a href="mailto:jayarchiveone@gmail.com">Contact →</a></h1>
+            </div>
+        </section>
+
+        <!-- New marquee section -->
+        <div class="marquee-container">
+    <div class="marquee-content">
+        <span>Playground</span>
+        <span>Playground</span>
+        <span>Playground</span>
+        <span>Playground</span>
+        <span>Playground</span>
+        <span>Playground</span>
+        <span>Playground</span>
+        <span>Playground</span>
+        <span>Playground</span>
+        <span>Playground</span>
+        <!-- Duplicate content for continuous scroll -->
+        <span>Playground</span>
+        <span>Playground</span>
+        <span>Playground</span>
+        <span>Playground</span>
+        <span>Playground</span>
+        <span>Playground</span>
+        <span>Playground</span>
+        <span>Playground</span>
+        <span>Playground</span>
+        <span>Playground</span>
+    </div>
+	</div>
+	
+	<section class="image-row">
+    <div class="image-column">
+        <img src="images/playground/lostintranslation.jpg" alt="Lost In Translation Poster">
+    </div>
+    <div class="image-column">
+        <img src="images/playground/challengers.png" alt="Challengers Poster">
+    </div>
+    <div class="image-column">
+        <img src="images/playground/sullivanstravels.png" alt="Sullivans Travels Poster">
+    </div>
+	</section>
+	
+	<section class="image-row">
+	<div class="image-column">
+        <img src="images/playground/buffalo66.png" alt="Buffalo 66 Poster">
+    </div>
+    <div class="image-column">
+        <img src="images/playground/priscilla.png" alt="Priscilla Poster">
+    </div>
+    <div class="image-column">
+        <img src="images/playground/niagara.png" alt="Niagara Poster">
+    </div>
+	</section>
+	
+	<section class="image-row">
+	 <div class="image-column">
+        <img src="images/playground/oz.jpg" alt="The Wizard Of Oz Poster">
+    </div>
+    <div class="image-column">
+        <img src="images/playground/blonde.jpg" alt="Blonde Poster">
+    </div>
+    <div class="image-column">
+        <img src="images/playground/fallenangels.jpg" alt="Fallen Angels Poster">
+    </div>
+	</section>
+	
+	<section class="image-row">
+    <div class="image-column">
+        <img src="images/playground/tohaveandhavenot.png" alt="To Have And Have Not Poster">
+    </div>
+    <div class="image-column">
+        <img src="images/playground/casablanca.png" alt="Casablanca Poster">
+    </div>
+     <div class="image-column">
+        <img src="images/playground/soho.png" alt="Last Night In Soho Poster">
+    </div>
+	</section>
+       
+    </main>
+
+    <script src="script.js"></script>
 </body>
 </html>
