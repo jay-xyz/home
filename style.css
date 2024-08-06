@@ -1,157 +1,451 @@
-// <uniquifier>: Use a unique and descriptive class name
-// <weight>: Use a value from 200 to 800
-
-.manrope-<uniquifier> {
-  font-family: "Manrope", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: <weight>;
-  font-style: normal;
+/* Reset and General Styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
-/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
+html, body {
+    overflow-x: hidden; /* Prevent horizontal scroll */
+    width: 100%;
+    position: relative;
+}
 
 body {
-	background-color: white;
-	color: black;
-	font-family: Manrope;
-	margin: 1em;
-	padding: 1em;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen-Sans, Ubuntu, Cantarell, 'Helvetica Neue', sans-serif;
+    padding: 0;
 }
 
-/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
-
-
-a:link {
-  color: black;
-}
-
-a:link {
-  text-decoration: none;
-}
-
-a:visited {
-  text-decoration: none;
-}
-
-a:active {
-  text-decoration: none;
-}
-
-/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
-
-
-p {
-	font-size: 1.2em;
-	font-weight: 300;
-	line-height: 1.5em;
-	width: 85%;
-}
-
-h1 {
-	font-size: 5em;
-	font-weight: normal;
-}
-
-h2 {
-	font-size: .9em;
-	font-weight: normal;	
-}
-
-h3 {
-	font-size: 1em;
-	font-weight: 600;
-}
-
-hr {
-	margin: 50px 0 50px 0;
-	opacity: 15%
-}
-
-/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
-
-.header {
-	display: flex;
-	gap: 3rem;
-}
-
-.links {
-	line-height: 2em;
-	margin-bottom: 50px;
-}
-
-.desc {
-	width:80%;
-	line-height: 2em;
+/* Typography */
+h1, h2, h3 {
+    font-size: 1.875rem;
+    font-weight: 225;
+    line-height: .875;
 }
 
 
-/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
-
-.column {
-	flex: 30%;
-	padding: 5px;
+/* Color Accents */
+h1 .designer {
+    color: #A7B4BE;
+    opacity: 50%;
 }
 
-img {
-	width: 100%;
-	border-radius: 10px;
+
+/* Link Styles */
+a {
+    text-decoration: none;
+    color: inherit;
 }
 
-.container {
-	display: flex;
+/* Header Styles */
+header {
+    background-color: white;
+    margin: 3.125rem 12.5rem;
 }
 
-/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
-
-/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
-@media screen and (max-width: 600px) {
-
-h1 {
-	font-size: 4em;
-	font-weight: normal;
+.header-container {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    flex-wrap: wrap;
 }
 
-.column {
-	flex: 100%;
-	padding: 5px;
-	flex-direction: column;
+/* Header Text */
+.header-text {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    font-size: 1.875rem;
 }
 
-img {
-	width: 100%;
-	border-radius: 10px;
+#day-greeting {
+    font-size: 1.875rem;
+    font-weight: 225;
+    margin-bottom: 0.5rem;
 }
 
-.container {
-	display: flex;
-	flex-direction: column;
+.bottom-line {
+    display: flex;
+    align-items: center;
+    white-space: nowrap;
 }
 
-@media screen and (max-width: 480px) {
-
-h1 {
-	font-size: 4em;
-	font-weight: normal;
+/* New and modified styles */
+.bottom-line > span {
+    margin-right: 0.25em; /* Add a small space between main elements */
 }
 
-.column {
-	flex: 100%;
-	padding: 5px;
-	flex-direction: column;
+#clock {
+    font-weight: 225;
+    font-size: 1.875rem;
+    color: #A7B4BE;
+    opacity: 50%;
 }
 
-img {
-	width: 100%;
-	border-radius: 10px;
+#weather {
+    display: inline; /* Change from flex to inline */
+    font-weight: 225;
+    color: #A7B4BE;
+    opacity: 50%;
 }
 
-.container {
-	display: flex;
-	flex-direction: column;
+#weather-icon {
+    font-size: 2rem;
+    margin-left: 0.25em; /* Add a small space before the weather icon */
 }
 
-  
-
-
+/* Remove any existing margins or paddings that might interfere */
+#weather-text {
+    margin: 0;
+    padding: 0;
 }
 
+/* Hero Section */
+.hero-container {
+    margin: 0 12.5rem 0 12.5rem; /* Removed bottom margin */
+    font-size: 1.875rem;
+}
+
+.hero-container h1 {
+    margin-bottom: 0.5em;
+}
+
+.welcome, .nav {
+    line-height: 1.2;
+}
+
+.marquee-container {
+    background-color: #0086F7; /* Adjust color as needed */
+    height: 50px;
+    overflow: hidden; /* Hide overflow to ensure a clean scroll */
+    position: relative;
+    width: 100%; /* Full width */
+    margin-top: 3.125rem;
+    margin-bottom: 3.125rem;
+}
+
+.marquee-content {
+    display: flex;
+    height: 100%;
+    white-space: nowrap; /* Prevents line breaks */
+    animation: marquee 20s linear infinite; /* Animation for scrolling effect */
+    position: relative; /* Needed for the ::before pseudo-element */
+}
+
+.marquee-content::before {
+    content: attr(data-text);
+    position: absolute;
+    white-space: nowrap;
+    display: flex;
+    align-items: center;
+    left: 100%; /* Start after the original content */
+    padding-left: 25px; /* Adjust padding to match original content's padding */
+}
+
+.marquee-content span {
+    font-size: 1.25rem;
+    color: white;
+    font-weight: 225;
+    white-space: nowrap; /* Prevents line breaks */
+    padding: 0 25px; /* Spacing between items */
+    display: flex;
+    align-items: center; /* Vertically centers the text */
+}
+
+@keyframes marquee {
+    0% {
+        transform: translateX(0); /* Start position */
+    }
+    100% {
+        transform: translateX(-100%); /* End position for one complete scroll */
+    }
+}
+
+/* Project Section */
+.project {
+    margin: 0 12.5rem 1.5rem 12.5rem;
+}
+
+.project-title {
+    margin: 0;
+    font-size: 1.625rem;
+    line-height: 1.2;
+}
+
+.project-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: nowrap;
+    gap: 2em;
+    margin-bottom: 1.5rem;
+}
+
+.role-info {
+    display: flex;
+    gap: 1em;
+    margin-left: auto;
+    color: rgba(0, 0, 0, 0.3);
+}
+
+/* Role Container Styles */
+.role-container {
+    background-color: #f1f4f7;
+    border-radius: 0.3125rem;
+    padding: 0.3125rem 0.625rem;
+    display: inline-block;
+}
+
+.role-container span {
+    font-size: 0.875rem;
+    font-weight: 300;
+    color: #0086F7
+}
+
+/* Description Section */
+.description {
+    font-size: 1.25rem;
+    margin-bottom: 3rem;
+    color: #A7B4BE;
+    font-weight: 225;
+    line-height: 1.4;
+}
+
+/* Project Images Section */
+.project-images {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+.project-images img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 3rem;
+}
+
+/* Image Row Section */
+.image-row {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 12.5rem 3.125rem 12.5rem; /* Adjust margins as per your design */
+    gap: 1rem; /* Space between columns */
+}
+
+/* Image Column */
+.image-column {
+    flex: 1; /* Equally distribute space */
+    margin: 0.5rem; /* Adjust as needed */
+}
+
+.image-column img {
+    width: 100%;
+    height: auto;
+    display: block;
+    /* border-radius: 0.5rem;  Rounded corners, adjust as needed */
+}
+
+
+/* Media Queries for Responsiveness */
+
+/* Large screens (up to 1200px) */
+@media (max-width: 1200px) {
+    header,
+    .hero-container,
+    .project,
+    .marquee-content {
+        margin-left: 6.25rem;
+        margin-right: 6.25rem;
+        padding-left: 0;
+        padding-right: 0;
+    }
+}
+
+/* Medium screens (up to 768px) */
+@media (max-width: 768px) {
+    header,
+    .hero-container,
+    .project,
+    .marquee-content {
+        margin-left: 3.125rem;
+        margin-right: 3.125rem;
+        padding-left: 0;
+        padding-right: 0;
+    }
+    
+    .project-info {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 1rem;
+    }
+
+    .project-title {
+        margin-bottom: 0.5rem;
+    }
+
+    .role-info {
+        margin-left: 0;
+        width: 100%;
+    }
+
+    .bottom-line {
+        flex-direction: row;
+        align-items: center;
+        flex-wrap: nowrap;
+    }
+
+    #clock {
+        margin-right: 1rem;
+    }
+
+    .marquee-content span {
+        font-size: 2rem;
+        padding: 0 25px;
+    }
+    
+    .image-row {
+        flex-direction: column;
+        margin: 0 3.125rem 3.125rem 3.125rem; /* Adjust margins for medium screens */
+    }
+}
+
+/* Small screens (up to 480px) */
+@media (max-width: 480px) {
+    body {
+         overflow-x: hidden; /* Prevent horizontal scroll */
+    width: 100%;
+    position: relative;
+    }
+    
+    header,
+    .main,
+    .hero-container,
+    .project {
+        margin-left: 0;
+        margin-right: 0;
+        padding-left: 2.25rem;
+        padding-right: 2.25rem;
+    }
+    
+    /* Typography */
+    h1 {
+        font-size: 2.25rem;
+        font-weight: 225;
+        line-height: .875;
+        letter-spacing: -.055em;
+    }
+    
+    /* Header Styles */
+    header {
+        margin-bottom: 2rem;
+        width: 100%;
+    }
+
+    .header-container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+    
+    .header-text {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    #day-greeting {
+        font-size: 1.25rem;
+        font-weight: 225;
+        margin-bottom: 0.5rem;
+    }
+
+    .bottom-line {
+        display: flex;
+        align-items: flex-start;
+        white-space: nowrap;
+    }
+
+    #clock {
+        font-size: 1.25rem;
+        font-weight: 225;
+    }
+
+    #weather {
+        display: flex;
+        align-items: center;
+    }
+
+    #weather-text {
+        font-size: 1.25rem;
+        font-weight: 225;
+    }
+
+    #weather-icon {
+        font-size: 1.25rem;
+        margin-left: 0.5em;
+    }
+
+    /* Project Section */
+    .project {
+        margin-bottom: 1.625rem;
+    }
+
+    .project-title {
+        margin-bottom: 0;
+        font-size: 1.65rem;
+    }
+
+    .role-info {
+        flex-wrap: wrap;
+        gap: 0.5rem;
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .role-container {
+        font-size: 0.75rem;
+        padding: 0.25rem 0.5rem;
+    }
+
+    .description {
+        width: 100%;
+        font-size: 1.25rem;
+        margin-bottom: 1.625rem;
+    }
+
+    .project-images {
+        margin-top: 0;
+    }
+
+    .project-images img {
+        margin-bottom: 1.625rem;
+    }
+
+    /* Marquee Styles */
+.marquee-container {
+    background-color: #0086F7; /* Adjust color as needed */
+    height: 50px;
+    overflow: hidden;
+    position: relative;
+    width: 100%; /* Changed from 100vw to 100% */
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.marquee-content {
+    display: flex;
+    height: 100%;
+    white-space: nowrap; /* Prevents line breaks */
+    animation: marquee 6s linear infinite; /* Animation for scrolling effect */
+    position: relative; /* Needed for the ::before pseudo-element */
+}
+    .marquee-content span {
+        font-size: 1.65rem;
+        padding: 0 15px;
+    }
+    
+    .image-row {
+        margin: 0 2.25rem 3.125rem 2.25rem; /* Adjust margins for small screens */
+    }
+}
